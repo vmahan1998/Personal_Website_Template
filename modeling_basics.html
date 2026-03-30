@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Ecological Modeling Basics – Vanessa Quintana</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-73b2083c4bc04ac949eacc8c37944fe5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Vanessa Quintana</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./modeling_basics.html" aria-current="page"> 
+<span class="menu-text">Modeling Basics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./projects.html"> 
+<span class="menu-text">Models</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-news" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">News</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-news">    
+        <li>
+    <a class="dropdown-item" href="./news/2026.html">
+ <span class="dropdown-text">2026</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/yourusername"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:your.email@maine.edu"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#ecological-modeling" id="toc-ecological-modeling" class="nav-link active" data-scroll-target="#ecological-modeling">Ecological Modeling</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Ecological Modeling Basics</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Ecological models help us understand how living systems behave and respond to change. They connect observations, data, and ecological theory to represent the processes that shape populations, habitats, and ecosystems. Rather than acting as perfect replicas of nature, they provide structured ways to explore complexity, test ideas, and support management decisions.</p>
+<section id="ecological-modeling" class="level2 tabset">
+<h2 class="tabset anchored" data-anchor-id="ecological-modeling">Ecological Modeling</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>Ecological modeling includes a wide range of approaches, from simple conceptual diagrams to fully coupled physical and biological simulations. Different approaches are useful for different questions, scales, and management needs.</p>
+<p>My work focuses on developing ecological models that integrate biological behavior with environmental and physical processes. I build transparent and reproducible modeling frameworks that support science based decision making, assessment of ecological risk, and community engaged management.</p>
+<section id="major-model-types" class="level4">
+<h4 class="anchored" data-anchor-id="major-model-types">Major model types</h4>
+<p><strong>Habitat Models</strong><br>
+Spatial models that quantify environmental suitability and identify critical habitat across life stages and environmental conditions.</p>
+<p><strong>Agent Based Models</strong><br>
+Individual based simulations that capture behavior, movement, and interactions to explore emergent ecological patterns and system level responses.</p>
+<p><strong>Coupled Models</strong><br>
+Integrated physical biological models that connect hydrodynamics, habitat conditions, and contaminant exposure to evaluate how environmental change shapes population and ecosystem outcomes.</p>
+<hr>
+</section>
+</section>
+<section id="habitat-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="habitat-modeling">Habitat Modeling</h3>
+<img src="images/Habitat_Model_Fig.png" alt="Environmental processes that shape habitat availability and species responses, forming the basis of habitat suitability and ecological risk modeling." style="float:right; width:350px; margin:0 20px 15px 0;
+            ">
+<section id="what-are-habitat-models" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-habitat-models">What Are Habitat Models?</h4>
+<p>Habitat models describe how environmental conditions support, limit, or structure where organisms can survive, grow, and reproduce. These models translate environmental variables such as depth, temperature, velocity, salinity, and substrate into estimates of habitat availability or quality. Habitat models are widely used in conservation planning, restoration design, species assessments, and understanding how ecosystems respond to environmental change.</p>
+<p>Habitat models range from simple conceptual frameworks to fully spatial, GIS based analyses. They help identify critical areas for life stages, evaluate habitat changes over space and time, and provide a foundation for linking physical processes with biological needs.</p>
+</section>
+<section id="habitat-suitability-indices-hsis" class="level4">
+<h4 class="anchored" data-anchor-id="habitat-suitability-indices-hsis">Habitat Suitability Indices (HSIs)</h4>
+<p>Habitat Suitability Indices (HSIs) are a common tool for evaluating habitat quality.<br>
+An HSI represents how suitable a particular location is for a species or life stage on a scale from zero to one. Values close to one indicate highly suitable conditions, while values near zero indicate unsuitable habitat.</p>
+<p>HSIs combine multiple environmental variables, each translated through species specific suitability curves. These curves describe how closely a given condition matches the known preferences or tolerances of the species. By combining these curves, HSIs allow researchers to map habitat quality across entire landscapes or river systems.</p>
+</section>
+<section id="hsis-are-useful-because-they-allow-researchers-to" class="level4">
+<h4 class="anchored" data-anchor-id="hsis-are-useful-because-they-allow-researchers-to">HSIs are useful because they allow researchers to:</h4>
+<ul>
+<li>evaluate habitat availability for different life stages</li>
+<li>identify areas that may serve as critical habitat</li>
+<li>compare conditions across years or scenarios</li>
+<li>explore how environmental change affects habitat suitability</li>
+<li>support restoration, management, and ecological forecasting</li>
+</ul>
+<hr>
+</section>
+<section id="purpose-of-habitat-modeling" class="level4">
+<h4 class="anchored" data-anchor-id="purpose-of-habitat-modeling">Purpose of Habitat Modeling</h4>
+<p>Habitat models help translate environmental data into biologically meaningful information. They are especially valuable for species with complex life cycles, migratory patterns, or sensitivity to environmental change. These models support decision making by identifying where conditions meet species requirements and how these conditions shift under different scenarios.</p>
+<p>For anadromous species, habitat models help reveal how hydrodynamics, temperature, salinity, and flow shape migration pathways and spawning conditions. When combined with behavioral models or contaminant assessments, habitat models serve as the foundation for understanding ecological risk and system dynamics.</p>
+<hr>
+</section>
+</section>
+<section id="agent-based-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="agent-based-modeling">Agent Based Modeling</h3>
+<img src="images/abm.png" alt="Agent-Based Models" style="float:left; width:250px; margin:0 20px 15px 0;
+            ">
+<section id="what-is-an-agent-based-model" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-an-agent-based-model">What is an Agent Based Model?</h4>
+<p>Agent based models (ABMs) simulate the actions and interactions of individual organisms or “agents” moving through their environment. Each agent follows a set of simple rules related to movement, behavior, or decision making. When many agents operate at once, these individual rules can produce complex system level patterns that are difficult to predict from observation alone.</p>
+<p>ABMs are useful for exploring behavioral ecology, migration pathways, risk exposure, predator and prey dynamics, and how organism level decisions scale to population or ecosystem outcomes. These models make it possible to represent variation, learning, spatial structure, and individual responses to environmental change in ways that support ecological understanding and management.</p>
+<hr>
+</section>
+<section id="why-use-abms" class="level4">
+<h4 class="anchored" data-anchor-id="why-use-abms">Why Use ABMs?</h4>
+<!-- ```{=html} -->
+<!-- <img src="/images/emergent_behaviors.png" -->
+<!--      alt="Emergent Behaviors in Agent-Based Models" -->
+<!--      style="float:right; width:300px; margin:0 20px 15px 0; -->
+<!--             "> -->
+<!-- ``` -->
+<p>ABMs represent individual behavior and decision making in ways that other modeling approaches cannot. They require advanced integration of ecology, behavior, spatial processes, and computation, along with careful validation to ensure that emergent patterns reflect real system dynamics. This makes ABMs demanding to build but exceptionally powerful for understanding complex ecological questions such as migration, risk exposure, and habitat selection in dynamic environments.</p>
+<p>Agent based models are powerful tools because they allow researchers to:</p>
+<ul>
+<li>represent individual variability<br>
+</li>
+<li>link movement and behavior to environmental conditions<br>
+</li>
+<li>explore emergent patterns<br>
+</li>
+<li>test “what if” scenarios that are not possible to replicate in the field<br>
+</li>
+<li>evaluate ecological risk and species responses in dynamic systems</li>
+</ul>
+<p>ABMs are often paired with habitat models or physical models to understand how biology and hydrodynamics interact across space and time.</p>
+<hr>
+</section>
+<section id="emergent-behaviors" class="level4">
+<h4 class="anchored" data-anchor-id="emergent-behaviors">Emergent Behaviors</h4>
+<p>One of the defining strengths of agent based modeling is the ability to observe <strong>emergent behavior</strong>, which occurs when simple individual rules create complex patterns at the group or system level. We can then examine these emergent properties to understand system-level responses.</p>
+<p>Below are two examples demonstrating emergent behavior using different numbers of agents.</p>
+<div style="display:flex; gap:10px; align-items:flex-start;">
+<div style="flex:1;">
+<video controls="" autoplay="" loop="" muted="" style="width: 100%; border-radius: 12px;">
+<source src="demos/Emergent_Behavior_Multiple_Agents_speed.mp4" type="video/mp4">
+</video>
+<p style="margin-top: 10px; font-size: 12px; color: #666;text-align:center;">
+</p><p>Emergent behavior with many agents interacting simultaneously</p>
+<p></p>
+</div>
+<div style="flex:1;">
+<video controls="" autoplay="" loop="" muted="" style="width: 100%; border-radius: 12px;">
+<source src="demos/Emergent_Behavior_Two_Agents_speed.mp4" type="video/mp4">
+</video>
+<p style="margin-top: 10px; font-size: 12px; color: #666;text-align:center;">
+</p><p>Emergent behavior with two agents following basic interaction rules</p>
+<p></p>
+</div>
+</div>
+<section id="why-abms-are-difficult-to-build" class="level5">
+<h5 class="anchored" data-anchor-id="why-abms-are-difficult-to-build">Why ABMs Are Difficult to Build</h5>
+<ul>
+<li>They require translating ecological processes into explicit individual rules<br>
+</li>
+<li>They must integrate movement, behavior, and environment at fine scales<br>
+</li>
+<li>They demand careful attention to stochasticity, uncertainty, and variability<br>
+</li>
+<li>They generate large spatial and temporal datasets that require efficient computation<br>
+</li>
+<li>They need rigorous testing to ensure that emergent patterns match real world observations<br>
+</li>
+<li>They often must combine multiple domains such as environmental dynamics, animal behavior, physiological limits, and ecological interactions.</li>
+</ul>
+<hr>
+</section>
+<section id="what-makes-abms-unique" class="level4">
+<h4 class="anchored" data-anchor-id="what-makes-abms-unique">What Makes ABMs Unique</h4>
+<p>Agent based models offer capabilities that are not achievable with most other ecological modeling approaches. They require a blend of ecological understanding, behavioral theory, spatial analysis, and computational skill that makes them both powerful and technically demanding.</p>
+<p>ABMs stand out because they allow researchers to represent how individuals perceive their environment, make decisions, and interact with physical and biological processes. This perspective creates opportunities to study behaviors, risks, and system responses that are invisible in population level or equation based models.</p>
+<p>ABMs also require advanced model design, careful rule construction, and rigorous validation to ensure that individual decisions scale realistically to emergent outcomes. This level of detail and transparency demands a strong understanding of both ecological processes and computational implementation.</p>
+<hr>
+<section id="why-this-expertise-matters" class="level5">
+<h5 class="anchored" data-anchor-id="why-this-expertise-matters">Why This Expertise Matters</h5>
+<p>Because ABMs simulate decision making and behavior, they can capture risk pathways, migration patterns, predator interactions, and exposure processes that other models cannot represent. This capability is especially important in systems where individual behavior determines ecological outcomes, such as tidal river migration, contaminant exposure, and habitat selection.</p>
+<p>Developing these models requires skills in simulation design, ecological theory, spatial modeling, and transparent validation. My work combines these elements to create agent based models that are both scientifically grounded and directly useful for management planning.</p>
+<hr>
+</section>
+</section>
+<section id="what-are-coupled-models" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-coupled-models">What Are Coupled Models?</h4>
+<p>Coupled models combine multiple processes into a single integrated framework.<br>
+These models link physical, chemical, and biological systems to explore how different components of an environment interact across space and time. In ecological applications, coupled models often blend hydrodynamics, habitat conditions, contaminant transport, and species behavior.</p>
+<p>By pairing these elements, researchers can ask questions about how environmental change influences ecological outcomes, how individual decisions scale to population effects, and how physical processes shape risk and exposure.</p>
+<hr>
+</section>
+<section id="why-use-coupled-models" class="level4">
+<h4 class="anchored" data-anchor-id="why-use-coupled-models">Why Use Coupled Models?</h4>
+<p>Coupled models are valuable because they allow researchers to:</p>
+<ul>
+<li>represent interactions between physical and biological systems<br>
+</li>
+<li>simulate environments that shift over space, time, and tidal cycles<br>
+</li>
+<li>assess ecological risk under multiple scenarios<br>
+</li>
+<li>capture processes that cannot be studied through a single model type<br>
+</li>
+<li>evaluate management actions, restoration strategies, or environmental change</li>
+</ul>
+<p>They provide a framework for understanding complex systems where no single model can capture the full story.</p>
+<hr>
+</section>
+<section id="integration-and-complexity" class="level4">
+<h4 class="anchored" data-anchor-id="integration-and-complexity">Integration and Complexity</h4>
+<p>Coupled models require careful coordination of multiple data streams, modeling domains, and temporal scales. Integrating hydrodynamics, habitat suitability, and behavior requires:</p>
+<ul>
+<li>aligning spatial grids and coordinate systems<br>
+</li>
+<li>synchronizing time steps across model types<br>
+</li>
+<li>ensuring feedback between processes is realistic and biologically meaningful<br>
+</li>
+<li>validating each component independently and in combination<br>
+</li>
+<li>managing large computational workloads and high-resolution datasets</li>
+</ul>
+<p>This level of integration makes coupled models powerful, but also technically complex. Successful implementation requires strong interdisciplinary knowledge, transparent workflows, and reproducible coding practices.</p>
+<hr>
+</section>
+<section id="costbenefit-of-coupled-modeling" class="level4">
+<h4 class="anchored" data-anchor-id="costbenefit-of-coupled-modeling">Cost–Benefit of Coupled Modeling</h4>
+<p>While complex, coupled models offer significant advantages:</p>
+<section id="benefits" class="level5">
+<h5 class="anchored" data-anchor-id="benefits">Benefits</h5>
+<ul>
+<li>more realistic representation of ecological systems<br>
+</li>
+<li>improved understanding of risk, exposure, and environmental change<br>
+</li>
+<li>insight into processes that cannot be observed directly<br>
+</li>
+<li>support for management decisions based on integrated system behavior</li>
+</ul>
+</section>
+<section id="costs" class="level5">
+<h5 class="anchored" data-anchor-id="costs">Costs</h5>
+<ul>
+<li>higher computational demands<br>
+</li>
+<li>greater model development time<br>
+</li>
+<li>increased need for interdisciplinary expertise<br>
+</li>
+<li>more detailed validation and scenario testing<br>
+</li>
+<li>larger, more complex datasets to maintain</li>
+</ul>
+<p>Despite these challenges, the benefits often outweigh the costs, especially in systems where physical processes strongly influence ecological outcomes. Coupled approaches allow researchers to understand not only where and when organisms move, but why those movements occur in a dynamic environment.</p>
+<hr>
+</section>
+</section>
+<section id="coupled-models-address-complex-environmental-problems" class="level4">
+<h4 class="anchored" data-anchor-id="coupled-models-address-complex-environmental-problems">Coupled Models Address Complex Environmental Problems</h4>
+<div style="height:4px; width:100%; margin:40px 0;">
+
+</div>
+<p>Estuaries like the Penobscot River are shaped by spatial patterns of contamination, tidal asymmetry, sediment resuspension, and shifting habitat conditions.<br>
+These processes operate across scales and cannot be captured by any single model.</p>
+<div style="text-align:center; margin:30px 0;">
+<div class="quarto-figure quarto-figure-center" style="max- border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+<figure class="figure">
+<p><img src="images/Methods_Figure.png" class="img-fluid figure-img"></p>
+<figcaption>Conceptual diagram of spatial and temporal drivers in a macrotidal estuary</figcaption>
+</figure>
+</div>
+<p style="font-size:14px; color:#666; margin-top:12px;">
+</p><p>Spatial and temporal processes that drive contamination transport, habitat dynamics, and anadromous fish behavior in macrotidal estuaries.</p>
+<p></p>
+</div>
+<p>Coupled models are valuable because they allow researchers to:</p>
+<ul>
+<li>represent interactions between physical and biological processes<br>
+</li>
+<li>simulate environments that shift over space, time, and tidal cycles<br>
+</li>
+<li>assess ecological risk under multiple scenarios<br>
+</li>
+<li>evaluate where, when, and why exposure or habitat use occurs<br>
+</li>
+<li>guide restoration and management decisions with integrated system insight</li>
+</ul>
+<hr>
+</section>
+<section id="learn-more" class="level4">
+<h4 class="anchored" data-anchor-id="learn-more">Learn More</h4>
+<ul>
+<li><a href="./tools/coding/coding_basics.html">Learn to Code →</a><br>
+</li>
+<li><a href="./tools/coding/github/version_control.html">Version Control →</a><br>
+</li>
+<li><a href="./tools/workshop/index.html">Co-Development →</a></li>
+</ul>
+
+
+</section>
+</section></section></section></main></div>
+
+
+
+
+
+
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+ <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Vanessa Mahan</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

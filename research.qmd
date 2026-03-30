@@ -1,0 +1,101 @@
+---
+title: "Research"
+---
+
+<style>
+body { background: linear-gradient(180deg,#08131d 0%,#0d1f2b 100%) !important; }
+.content h3 { color: #7ecce6; margin-top: 1.6rem; }
+.research-card {
+  padding: 1.2rem 1.4rem;
+  border-radius: 16px;
+  background: rgba(15,31,45,0.55);
+  border: 1px solid rgba(126,204,230,0.16);
+  margin-bottom: 1rem;
+  transition: 0.2s ease;
+}
+.research-card:hover { border-color: rgba(126,204,230,0.32); transform: translateY(-2px); }
+.research-card h3 { margin-top: 0 !important; }
+.research-card p { color: rgba(214,236,246,0.90); font-size: 0.98rem; line-height: 1.65; }
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(126,204,230,0.12);
+  border: 1px solid rgba(126,204,230,0.25);
+  color: #7ecce6;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 4px 3px 0 0;
+}
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.method-pill {
+  padding: 0.65rem 1rem;
+  border-radius: 12px;
+  background: rgba(126,204,230,0.08);
+  border: 1px solid rgba(126,204,230,0.18);
+  color: rgba(218,236,245,0.92);
+  font-size: 0.92rem;
+  text-align: center;
+}
+@media (max-width: 768px) { .methods-grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+
+## Dissertation Research
+
+My dissertation investigates how tidal behavior and contaminated suspended particulate matter influence anadromous fish habitat and mercury exposure in the Penobscot River system.
+
+<div class="research-card">
+  <span class="tag">Dissertation Focus</span>
+  <h3>Drivers of Sediment-Bound Contamination Risk for Anadromous Fish in Estuaries</h3>
+  <p>Using the Penobscot River as a case study, this work develops coupled hydrodynamic and behavioral modeling frameworks to understand how exposure risk emerges from the interaction between material transport, habitat availability, and organism movement — rather than treating contamination as fixed in space.</p>
+  <p>Key themes:</p>
+  <ul>
+    <li>Hydrodynamic drivers of sediment and contaminant transport</li>
+    <li>Seasonal habitat suitability for river herring life stages</li>
+    <li>Behavioral pathways of realized contaminant exposure</li>
+    <li>Community-engaged and co-developed ecological modeling</li>
+  </ul>
+</div>
+
+## Current Research Areas
+
+<div class="research-card">
+  <h3>Hydrodynamics and Contaminant Transport</h3>
+  <p>This work examines how river discharge, flood tides, and tidal asymmetry structure material transport and exposure opportunity in estuarine environments. Hydrodynamic outputs from Delft3D FM inform spatial and temporal distributions of contaminated suspended particulate matter across the estuary.</p>
+</div>
+
+<div class="research-card">
+  <h3>Habitat Suitability and Exposure Risk</h3>
+  <p>I use life-stage-specific habitat suitability models to evaluate when and where high-quality habitat overlaps with contaminated sediment. This produces spatially explicit exposure opportunity maps that vary with season, discharge, and tidal phase.</p>
+</div>
+
+<div class="research-card">
+  <h3>Coupled Behavioral and Hydrodynamic Modeling</h3>
+  <p>I developed a coupled hydrodynamic and agent-based framework to test how migration, foraging, schooling, and predator–prey interactions influence realized exposure risk. The framework translates environmental conditions into organism-level outcomes over time.</p>
+</div>
+
+<div class="research-card">
+  <h3>Co-Development and Tribal Engagement</h3>
+  <p>Model structure and behavioral rules are developed collaboratively with Tribal partners, incorporating Traditional Ecological Knowledge alongside observational data. This shapes both the scientific questions asked and the tools built to answer them.</p>
+</div>
+
+<div class="about-divider"></div>
+
+## Methods
+
+<div class="methods-grid">
+  <div class="method-pill">Delft3D FM Hydrodynamics</div>
+  <div class="method-pill">Agent-Based Modeling (NetLogo)</div>
+  <div class="method-pill">Habitat Suitability Modeling</div>
+  <div class="method-pill">R and Python Workflows</div>
+  <div class="method-pill">Geospatial Analysis (ArcGIS / QGIS)</div>
+  <div class="method-pill">ADCP Field Sampling</div>
+  <div class="method-pill">Sediment and Water Analysis</div>
+  <div class="method-pill">Quarto / Reproducible Reporting</div>
+  <div class="method-pill">Participatory Modeling</div>
+</div>

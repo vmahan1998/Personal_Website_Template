@@ -1,0 +1,431 @@
+---
+title: "Vanessa Quintana"
+subtitle: "Applied Ecological Modeler • Coastal Systems Scientist • Geospatial Analyst"
+page-layout: full
+image: images/Author_Picture.jpg
+format:
+  html:
+    theme: cosmo
+    toc: false
+    smooth-scroll: true
+---
+
+<style>
+body {
+  background: linear-gradient(180deg, #08131d 0%, #0d1f2b 100%);
+}
+
+main.content {
+  max-width: 1250px;
+}
+
+h1, h2, h3, h4 {
+  color: #ffffff;
+}
+
+p, li {
+  color: rgba(222,238,246,0.92);
+  line-height: 1.7;
+}
+
+a {
+  color: #7ecce6;
+}
+
+.hero-block {
+  margin: -1rem -1rem 2rem -1rem;
+  padding: 3.5rem 2rem 2.8rem 2rem;
+  border-radius: 0 0 24px 24px;
+  background-image:
+    linear-gradient(rgba(10,22,34,0.72), rgba(10,22,34,0.78)),
+    url("images/restoration.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.28);
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  color: rgba(232,244,250,0.92);
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-meta {
+  color: rgba(200,227,239,0.82);
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-quote {
+  border-radius: 18px;
+  padding: 1.25rem 1.3rem;
+  background: rgba(8,20,30,0.42);
+  border: 1px solid rgba(126,204,230,0.22);
+  color: rgba(223,239,247,0.92);
+  font-size: 1rem;
+  line-height: 1.6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.btn-row a {
+  display: inline-block;
+  margin-right: 0.7rem;
+  margin-bottom: 0.7rem;
+  padding: 0.85rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary-custom {
+  background: linear-gradient(135deg, rgba(79,179,217,0.45), rgba(126,204,230,0.28));
+  border: 1px solid rgba(126,204,230,0.55);
+  color: #ffffff !important;
+}
+
+.btn-secondary-custom {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(126,204,230,0.28);
+  color: rgba(231,245,250,0.92) !important;
+}
+
+.profile-panel {
+  padding: 1.4rem;
+  border-radius: 20px;
+  background: rgba(15,31,45,0.55);
+  border: 1px solid rgba(126,204,230,0.18);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.16);
+}
+
+.profile-image {
+  border-radius: 18px;
+  border: 2px solid rgba(126,204,230,0.40);
+  box-shadow:
+    0 0 0 6px rgba(126,204,230,0.08),
+    0 20px 50px rgba(0,0,0,0.35);
+  margin-bottom: 1rem;
+}
+
+.badge-list p {
+  margin-bottom: 0.55rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 10px;
+  background: rgba(126,204,230,0.10);
+  border: 1px solid rgba(126,204,230,0.22);
+  color: rgba(218,236,245,0.92);
+  font-size: 0.9rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  background: rgba(79,179,217,0.18);
+  border: 1px solid rgba(79,179,217,0.35);
+  color: rgba(220,240,248,0.96) !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.kicker {
+  color: #7ecce6;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.name-heading {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.35rem;
+  line-height: 1.05;
+}
+
+.title-line {
+  font-size: 1.04rem;
+  color: #7ecce6;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.dissertation-box {
+  padding: 12px 16px;
+  border-left: 3px solid #7ecce6;
+  background: rgba(126,204,230,0.07);
+  border-radius: 0 10px 10px 0;
+  color: rgba(210,233,243,0.90);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin-top: 0.75rem;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(126,204,230,0.25), transparent);
+  margin: 28px 0;
+}
+
+.callout.callout-style-default {
+  background: rgba(15,31,45,0.55);
+  border: 1px solid rgba(126,204,230,0.18);
+  border-radius: 16px;
+}
+
+.callout.callout-style-default .callout-header {
+  background: rgba(126,204,230,0.06);
+}
+
+.callout.callout-style-default .callout-title {
+  color: #7ecce6;
+  font-weight: 700;
+}
+
+.research-card,
+.tool-card {
+  height: 100%;
+  padding: 1rem 1rem 1.15rem 1rem;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(126,204,230,0.18);
+  background: rgba(15,31,45,0.55);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.16);
+}
+
+.research-card h3,
+.tool-card h3 {
+  color: #ffffff;
+  font-size: 1.12rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.45rem;
+}
+
+.research-card p,
+.tool-card p {
+  color: rgba(209,232,242,0.88);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.tool-wrapper {
+  border-radius: 18px;
+  padding: 1.4rem;
+  background: rgba(12,27,39,0.58);
+  border: 1px solid rgba(126,204,230,0.18);
+}
+
+.tools-intro {
+  margin-bottom: 1rem;
+}
+
+img.research-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .name-heading {
+    font-size: 2.1rem;
+  }
+}
+</style>
+
+::: {.columns}
+::: {.column width="32%"}
+
+::: {.profile-panel}
+
+![](images/Author_Picture.jpg){.profile-image width="100%" fig-alt="Vanessa Quintana"}
+
+::: {.badge-list}
+Marine Sciences, University of Maine
+
+ORISE Fellow, U.S. Army Corps of Engineers
+
+Estuarine Hydrodynamics and Sediment Transport
+
+Agent-Based and Ecological Modeling
+:::
+
+:::
+
+:::
+::: {.column width="68%"}
+
+::: {.kicker}
+About My Work
+:::
+
+I work at the intersection of hydrodynamics, sediment and contaminant transport, and fish behavior. My research focuses on how exposure actually emerges in real estuarine systems, not just where contamination exists on a map.
+
+I approach modeling as a way to make processes visible. Instead of treating risk as static, I build frameworks that show how movement, interaction, habitat, and environmental variability combine to shape outcomes over time. My goal is to create tools that are transparent, reproducible, and genuinely useful for management and restoration.
+
+:::{.callout-note appearance="minimal"}
+## My Modeling Philosophy
+
+**Transparent modeling.** I build models that clearly state assumptions, uncertainty, and limitations so they can be critiqued, interpreted, and improved rather than treated as black boxes.
+
+**Co-development.** My work is shaped through collaboration with Tribal partners, federal agencies, local experts, and resource managers so that model structure and outputs reflect both ecological realism and decision context.
+
+**Simplicity in complexity.** Complex systems do not require overly complicated tools. I focus on isolating the mechanisms that matter most while keeping models accessible, adaptable, and communicable.
+
+**Decision support.** I design models to help people think through risk, compare scenarios, and identify where management actions may be most effective.
+:::
+
+:::
+:::
+
+::: {.section-divider}
+:::
+
+:::{.callout-note appearance="minimal"}
+## How I Work
+
+My research integrates field observations, spatial analysis, hydrodynamic modeling, and behavioral simulation. I use coupled approaches because exposure risk is not driven by one factor alone. It emerges from the interaction between material transport, habitat availability, and organism behavior.
+
+This means my work often combines:
+
+- hydrodynamic and sediment transport modeling
+- life-stage habitat suitability modeling
+- agent-based modeling of migration, schooling, foraging, and exposure pathways
+- interactive tools for communication and decision support
+:::
+
+:::{.callout-note appearance="minimal"}
+## Why This Work Matters
+
+Estuarine systems are dynamic, and contaminant risk cannot be understood from environmental conditions alone. Exposure is not fixed in space. It emerges as organisms move through shifting hydrodynamic and ecological conditions.
+
+That matters for fisheries management, restoration planning, and remediation because ecological recovery and contamination risk can occur at the same time in the same system. My work is aimed at making those interactions visible.
+:::
+
+::: {.section-divider}
+:::
+
+## Research Areas
+
+::: {.columns}
+::: {.column width="25%"}
+
+::: {.research-card}
+![](images/Hydrodynamics.jpg){.research-img fig-alt="Hydrodynamics"}
+
+### Hydrodynamics
+
+Flow regimes, tidal asymmetry, river discharge, and sediment transport as drivers of material movement through estuarine systems.
+:::
+
+:::
+::: {.column width="25%"}
+
+::: {.research-card}
+![](images/emergent_behaviors.png){.research-img fig-alt="Agent-Based Modeling"}
+
+### Agent-Based Modeling
+
+Behavior, migration, schooling, and trophic interactions as mechanisms that transform potential exposure into realized risk.
+:::
+
+:::
+::: {.column width="25%"}
+
+::: {.research-card}
+![](images/Habitat_Modeling.jpg){.research-img fig-alt="Habitat Modeling"}
+
+### Habitat Modeling
+
+Life-stage-specific habitat suitability frameworks linking environmental gradients with when and where fish can persist.
+:::
+
+:::
+::: {.column width="25%"}
+
+::: {.research-card}
+![](images/Community_Workshop.jpg){.research-img fig-alt="Co-Development"}
+
+### Co-Development
+
+Collaborative model building with Tribal partners, agencies, and communities to improve transparency, relevance, and use.
+:::
+
+:::
+:::
+
+::: {.section-divider}
+:::
+
+## Featured Tools
+
+::: {.tool-wrapper}
+
+::: {.tools-intro}
+Alongside publications and reports, I build public-facing tools and modeling products that support interpretation, communication, and applied decision-making.
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.tool-card}
+### [Mercury Risk Explorer](https://vkzfr3-vanessa-mahan.shinyapps.io/Mercury_Risk_Explorer)
+
+Interactive application visualizing how hydrodynamics, habitat, and fish behavior structure mercury exposure risk in estuaries.
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.tool-card}
+### [GoFish Toolkit](https://vmahan1998.github.io/GoFish)
+
+Behavioral modeling toolkit for migratory fish with functions for movement, energetics, exposure, and ecological interaction.
+:::
+
+:::
+:::
+
+<br>
+
+::: {.columns}
+::: {.column width="50%"}
+
+::: {.tool-card}
+### [HyporheicFloPy](https://usace-wrises.github.io/HyporheicFloPy)
+
+Automated groundwater and hyporheic modeling workflow built to support restoration and aquatic systems analysis.
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.tool-card}
+### [River Herring Habitat Model](https://github.com/vmahan1998/RiverHerringHabitatModel_TechReport)
+
+Transparent habitat suitability framework for alewife and blueback herring across life stages and changing estuarine conditions.
+:::
+
+:::
+:::
+
+:::

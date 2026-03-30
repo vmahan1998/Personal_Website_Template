@@ -1,0 +1,45 @@
+/* ── Supplemental styles: reinforce dark theme where Bootstrap/flatly overrides ── */
+
+body {
+  background: linear-gradient(180deg, #08131d 0%, #0d1f2b 100%) !important;
+  color: rgba(222,238,246,0.92) !important;
+}
+
+/* Override flatly's white page background */
+.quarto-container, #quarto-document-content, .page-columns {
+  background: transparent !important;
+}
+
+/* Sidebar / TOC panel */
+#quarto-sidebar { background: rgba(8,20,30,0.55) !important; }
+.sidebar-navigation { background: transparent !important; }
+
+/* Inline page title blocks */
+.quarto-title-banner { background: transparent !important; }
+.quarto-title-banner .quarto-title h1 { color: #ffffff; }
+div.quarto-title-meta { color: rgba(200,227,239,0.75); }
+
+/* Prose */
+.hero-text { font-size: 1.1rem; color: rgba(222,238,246,0.92); }
+
+/* Portrait on index */
+.quarto-about-jolla .about-entity img {
+  border-radius: 12px;
+  max-width: 260px;
+}
+
+/* Navbar brand */
+.navbar-brand { font-weight: 700; }
+
+/* Buttons */
+.btn { border-radius: 10px; }
+
+/* Research / publications / projects: section headers */
+.content h2 { color: #ffffff; }
+.content h3 { color: #7ecce6; }
+
+/* Strong / bold inside dark pages */
+strong { color: rgba(240,248,252,0.96); }
+
+/* List markers */
+ul li::marker { color: #7ecce6; }

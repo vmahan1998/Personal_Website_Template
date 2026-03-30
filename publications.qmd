@@ -1,0 +1,275 @@
+---
+title: "Publications"
+format:
+  html:
+    toc: false
+    theme: cosmo
+---
+
+<style>
+body {
+  background: linear-gradient(180deg,#08131d 0%,#0d1f2b 100%) !important;
+}
+
+h1, h2, h3, p, li {
+  color: rgba(222,238,246,0.92);
+}
+
+h2, h3 {
+  color: #ffffff;
+}
+
+a {
+  color: #7ecce6;
+}
+
+.pub-card {
+  padding: 1.15rem 1.4rem;
+  border-radius: 16px;
+  background: rgba(15,31,45,0.55);
+  border: 1px solid rgba(126,204,230,0.14);
+  margin-bottom: 1rem;
+  transition: 0.2s ease;
+}
+
+.pub-card:hover {
+  border-color: rgba(126,204,230,0.30);
+  transform: translateY(-2px);
+}
+
+.pub-authors {
+  color: rgba(200,227,239,0.80);
+  font-size: 0.93rem;
+  margin-bottom: 0.3rem;
+}
+
+.pub-authors strong {
+  color: #7ecce6;
+}
+
+.pub-title {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.pub-venue {
+  color: rgba(190,220,235,0.82);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.pub-links {
+  margin-top: 0.6rem;
+}
+
+.pub-link {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background: rgba(126,204,230,0.12);
+  border: 1px solid rgba(126,204,230,0.25);
+  color: #7ecce6 !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  margin-right: 6px;
+  transition: 0.2s ease;
+}
+
+.pub-link:hover {
+  background: rgba(126,204,230,0.22);
+  border-color: rgba(126,204,230,0.45);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.badge-review {
+  background: rgba(255,180,50,0.15);
+  border: 1px solid rgba(255,180,50,0.30);
+  color: #f5c865;
+}
+
+.badge-prep {
+  background: rgba(126,204,230,0.12);
+  border: 1px solid rgba(126,204,230,0.25);
+  color: #7ecce6;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(126,204,230,0.25), transparent);
+  margin: 28px 0;
+}
+</style>
+
+## Peer-Reviewed Articles
+
+::: {.pub-card}
+::: {.pub-authors}
+Swannack, T. M., Cushway, K. C., Carrillo, C. C., Calvo, C., Determan, K. R., Mierzejewski, C. M., **Quintana, V. M.**, Riggins, C. L., Sams, M. D., & Wadsworth, W. E. (2025).
+:::
+
+::: {.pub-title}
+Cracking the code: Linking good modeling and coding practices for new ecological modelers.
+:::
+
+::: {.pub-venue}
+*Ecological Modelling, 499, 110926.*
+:::
+
+::: {.pub-links}
+[DOI](https://doi.org/10.1016/j.ecolmodel.2024.110926){.pub-link}
+:::
+:::
+
+::: {.pub-card}
+::: {.pub-authors}
+**Mahan, V.**, ten Brink, T., & Johnsen, P. (2022).
+:::
+
+::: {.pub-title}
+Guidance for integrating GIS analyses into ESA Section 7 federal consultations.
+:::
+
+::: {.pub-venue}
+*NOAA Fisheries Policy Series [22-03].*
+:::
+
+::: {.pub-links}
+[Report](https://www.greateratlantic.fisheries.noaa.gov/policyseries){.pub-link}
+:::
+:::
+
+::: {.pub-card}
+::: {.pub-authors}
+McKay, S. K., **Mahan, V.**, Dougherty, M. P., Swannack, T. M., Hall, C., Saltus, C. L., Reif, M. K., & Allen, S. (2022).
+:::
+
+::: {.pub-title}
+New York Bight Ecological Model (NYBEM), Version 1.0.0.
+:::
+
+::: {.pub-venue}
+*U.S. Army Engineer Research and Development Center.*
+:::
+:::
+
+::: {.section-divider}
+:::
+
+## Manuscripts in Review
+
+::: {.pub-card}
+::: {.pub-authors}
+Menichino, G., **Quintana, V.**, Wiest, S., Mierzejewski, C., & Schwartz, B. (2025, in review).
+:::
+
+::: {.pub-title}
+Hyporheic Exchange (HYPE) Tool: Automated hyporheic hydraulics modeling in rivers using Python. [In Review]{.status-badge .badge-review}
+:::
+:::
+
+::: {.pub-card}
+::: {.pub-authors}
+U.S. Army Corps of Engineers & Wampanoag Tribe of Gay Head (Aquinnah). (2025, in review).
+:::
+
+::: {.pub-title}
+Environmental Resource Management Study in Aquinnah, Massachusetts. [In Review]{.status-badge .badge-review}
+:::
+:::
+
+::: {.section-divider}
+:::
+
+## In Preparation
+
+::: {.pub-card}
+::: {.pub-title}
+Hydrodynamic regimes as drivers of material and contaminant transport in estuaries. [In Prep]{.status-badge .badge-prep}
+:::
+
+::: {.pub-authors}
+**Quintana, V. M.**
+:::
+:::
+
+::: {.pub-card}
+::: {.pub-title}
+Behavioral mediation of mercury exposure risk in anadromous fish. [In Prep]{.status-badge .badge-prep}
+:::
+
+::: {.pub-authors}
+**Quintana, V. M.**
+:::
+:::
+
+::: {.section-divider}
+:::
+
+## Software & Technical Products
+
+::: {.pub-card}
+::: {.pub-authors}
+**Quintana, V. M.** (2025).
+:::
+
+::: {.pub-title}
+Mercury Risk Explorer [Interactive application].
+:::
+
+::: {.pub-links}
+[Launch App](https://vkzfr3-vanessa-mahan.shinyapps.io/Mercury_Risk_Explorer){.pub-link}
+:::
+:::
+
+::: {.pub-card}
+::: {.pub-authors}
+**Quintana, V. M.** (2025).
+:::
+
+::: {.pub-title}
+GoFish: A toolkit for modeling migratory fish and environmental risk [Software].
+:::
+
+::: {.pub-links}
+[Documentation](https://vmahan1998.github.io/GoFish){.pub-link}
+:::
+:::
+
+::: {.pub-card}
+::: {.pub-authors}
+**Quintana, V. M.** & Menichino, G. (2025).
+:::
+
+::: {.pub-title}
+HyporheicFloPy [Python software].
+:::
+
+::: {.pub-links}
+[Documentation](https://usace-wrises.github.io/HyporheicFloPy){.pub-link}
+:::
+:::
+
+::: {.pub-card}
+::: {.pub-authors}
+**Quintana, V. M.** (2024).
+:::
+
+::: {.pub-title}
+River Herring Habitat Model [Habitat suitability model].
+:::
+
+::: {.pub-links}
+[GitHub](https://github.com/vmahan1998/RiverHerringHabitatModel_TechReport){.pub-link}
+:::
+:::

@@ -1,0 +1,203 @@
+---
+title: "Curriculum Vitae"
+---
+
+<style>
+body { background: linear-gradient(180deg,#08131d 0%,#0d1f2b 100%) !important; }
+.cv-block {
+  padding: 1.1rem 1.4rem;
+  border-radius: 14px;
+  background: rgba(15,31,45,0.55);
+  border: 1px solid rgba(126,204,230,0.14);
+  margin-bottom: 0.9rem;
+}
+.cv-block h3 { color: #ffffff; font-size: 1.1rem; margin: 0 0 0.15rem 0; }
+.cv-block .org { color: #7ecce6; font-weight: 600; font-size: 0.95rem; }
+.cv-block .dates { color: rgba(200,227,239,0.65); font-size: 0.87rem; margin-bottom: 0.6rem; }
+.cv-block p, .cv-block li { color: rgba(214,236,246,0.90); font-size: 0.95rem; line-height: 1.62; }
+.cv-block ul { margin-bottom: 0; padding-left: 1.2rem; }
+.cv-block ul li::marker { color: #7ecce6; }
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+.skill-item {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: rgba(126,204,230,0.07);
+  border: 1px solid rgba(126,204,230,0.15);
+  color: rgba(218,236,245,0.92);
+  font-size: 0.9rem;
+}
+.cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.4rem;
+}
+.cv-contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: rgba(126,204,230,0.12);
+  border: 1px solid rgba(126,204,230,0.25);
+  color: #7ecce6 !important;
+  text-decoration: none !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.cv-contact a:hover { background: rgba(126,204,230,0.22); }
+@media (max-width: 600px) { .skill-grid { grid-template-columns: 1fr; } }
+</style>
+
+[Download PDF](files/Quintana_Resume.pdf){.btn .btn-primary}
+
+## Vanessa M. Quintana
+**Applied Ecological Modeler · Coastal Systems Scientist · Geospatial Analyst**
+
+<div class="cv-contact">
+  <a href="mailto:Mahan.Vanessa98@gmail.com">📧 Email</a>
+  <a href="https://github.com/vmahan1998">GitHub</a>
+  <a href="linkedin.com/m/in/vanessa-quintana-a775aa170/">LinkedIn</a>
+  <a href="https://orcid.org/0000-0002-4179-3575">ORCID</a>
+</div>
+
+Applied ecological modeler developing decision-support tools for federal agencies, Tribal partners, and coastal resource managers, with over five years of experience in hydrodynamic and ecological modeling. My work integrates hydrodynamic modeling, spatial analysis, and agent-based modeling to translate complex environmental systems into actionable insight for environmental management, restoration, and policy.
+
+---
+
+## Core Competencies
+
+<div class="skill-grid">
+  <div class="skill-item">Geospatial Analysis (ArcGIS, QGIS)</div>
+  <div class="skill-item">Coastal and Estuarine Hydrodynamics</div>
+  <div class="skill-item">Ecological Modeling (Habitat & Agent-Based)</div>
+  <div class="skill-item">Python, R, NetLogo, MATLAB</div>
+  <div class="skill-item">Automated Modeling Workflows</div>
+  <div class="skill-item">Spatial Data Management & Visualization</div>
+  <div class="skill-item">Federal Compliance & Technical Reporting</div>
+  <div class="skill-item">Community Engagement & Co-Development</div>
+</div>
+
+---
+
+## Professional Experience
+
+<div class="cv-block">
+  <h3>Ecological Modeler / ORISE Research Fellow</h3>
+  <div class="org">U.S. Army Corps of Engineers – ERDC</div>
+  <div class="dates">2021 – Present</div>
+  <ul>
+    <li>Developed automated ecological and hydrodynamic modeling workflows supporting restoration and infrastructure decision-making</li>
+    <li>Reduced groundwater model runtimes from 7–14 days to under 5 minutes using Python automation</li>
+    <li>Co-produced ecological models with Tribal partners, integrating Traditional Ecological Knowledge into modeling frameworks</li>
+    <li>Developed ITEKVault, an AI-assisted tool supporting TEK-informed restoration planning</li>
+    <li>Led design of Tribal decision-support agent-based models integrating hydrodynamics and fish behavior</li>
+    <li>Conducted habitat assessments across six ecosystem types for coastal storm risk management</li>
+    <li>Delivered training on version control and collaborative modeling to federal scientists</li>
+  </ul>
+</div>
+
+<div class="cv-block">
+  <h3>PhD Researcher – Coastal and Estuarine Systems</h3>
+  <div class="org">University of Maine</div>
+  <div class="dates">2022 – Present</div>
+  <ul>
+    <li>Developed decision-support models evaluating mercury exposure risk, habitat suitability, and fish behavior</li>
+    <li>Conducted 6+ ADCP deployments and 300+ hours of estuarine field sampling</li>
+    <li>Processed 120+ water samples and 300+ GB of hydrodynamic data</li>
+    <li>Built automated workflows reducing sediment analysis time by 85%</li>
+    <li>Produced spatial risk maps identifying contaminant exposure hotspots</li>
+    <li>Integrated Tribal knowledge into 20+ behavioral model rules</li>
+    <li>Led a 32-participant participatory modeling workshop</li>
+    <li>Developed Mercury Risk Explorer and GoFish modeling toolkit</li>
+  </ul>
+</div>
+
+<div class="cv-block">
+  <h3>GIS Laboratory Intern</h3>
+  <div class="org">NOAA Fisheries – Greater Atlantic Regional Fisheries Office</div>
+  <div class="dates">2021 – 2022</div>
+  <ul>
+    <li>Conducted habitat impact analyses for major federal infrastructure projects</li>
+    <li>Supported ESA Section 7 Biological Opinion development</li>
+    <li>Developed reproducible GIS workflows for regulatory decision-making</li>
+    <li>Authored NOAA GIS Policy Series guidance document</li>
+  </ul>
+</div>
+
+<div class="cv-block">
+  <h3>GIS Analyst</h3>
+  <div class="org">TRC Solutions – Environmental Consulting</div>
+  <div class="dates">2020 – 2021</div>
+  <ul>
+    <li>Managed large-scale GIS infrastructure datasets</li>
+    <li>Completed 35 backlog reconstruction projects</li>
+    <li>Supported regulatory compliance and environmental review</li>
+  </ul>
+</div>
+
+---
+
+## Education
+
+<div class="cv-block">
+  <h3>PhD Candidate, Marine Sciences</h3>
+  <div class="org">University of Maine</div>
+  <div class="dates">2022 – Present</div>
+</div>
+
+<div class="cv-block">
+  <h3>MS, Environmental Science and Policy</h3>
+  <div class="org">Johns Hopkins University</div>
+</div>
+
+<div class="cv-block">
+  <h3>BS, Biological Sciences</h3>
+  <div class="org">Missouri University of Science and Technology</div>
+</div>
+
+---
+
+## Awards and Recognition
+
+<div class="cv-block">
+  <ul>
+    <li>ORISE Research Fellowship (2021–2026)</li>
+    <li>MIT / WHOI Climate Conference Poster Award</li>
+    <li>COPRI Student Award and CERF Travel Grant</li>
+    <li>Graduate Student Senate Awards</li>
+    <li>Forbes 30 Under 30 Nominee</li>
+    <li>Entrepreneurship Competition Awards ($35,000+)</li>
+  </ul>
+</div>
+
+---
+
+## Selected Presentations
+
+<div class="cv-block">
+  <ul>
+    <li>CERF Biennial Conference (2025)</li>
+    <li>MIT / WHOI Graduate Climate Conference (2025)</li>
+    <li>American Fisheries Society Annual Meeting (2024)</li>
+    <li>World Fisheries Congress (2024)</li>
+    <li>NOAA and USACE workshops (multiple)</li>
+  </ul>
+</div>
+
+---
+
+## Leadership and Affiliations
+
+<div class="cv-block">
+  <ul>
+    <li>COPRI (ASCE) Student Chapter President</li>
+    <li>Member: CERF, AFS, AAAS</li>
+    <li>Young Alumni Committee, Missouri S&T</li>
+  </ul>
+</div>

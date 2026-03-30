@@ -1,0 +1,133 @@
+---
+title: "Modeling Toolkit"
+format: html
+page-layout: full
+editor: visual
+---
+
+:::: toolkit-banner
+::: toolkit-banner-text
+Core Coding Skills
+:::
+::::
+
+```{=html}
+<style>
+
+/* Banner container */
+.toolkit-banner {
+  width: 100%;
+  height: 260px;
+  background-image: url("/images/binary.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-end;      /* move content to the bottom */
+  justify-content: flex-start; /* left alignment */
+  padding: 0 0 25px 40px;     /* bottom + left padding for spacing */
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.35);
+  margin-bottom: 40px;        /* space between banner and next text */
+}
+
+/* Banner text */
+.toolkit-banner-text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.6);
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+```
+
+Coding is the backbone of ecological modeling.  
+It enables transparent methods, reproducible workflows, automated analyses, and models that reflect real ecological processes. Most importantly, diverse coding skills allow knowledge to move easily across disciplines, increasing model utility by making tools accessible to different communities and management audiences. Different fields use their own programming conventions and software ecosystems, so knowing multiple languages improves communication, interdisciplinary collaboration, and technology transfer. Coding is also essential for designing interactive, accessible communication and decision-support applications.  
+
+Whether simulating fish behavior, building hydrodynamic models, analyzing sediment transport, or creating decision-support tools, coding is what makes ecological research scalable, clear, and open.
+
+Below are the core tools I use across hydrodynamics, habitat modeling, sediment transport, groundwater modeling, and agent-based models — organized into a clean, easy-to-navigate toolkit.
+
+------------------------------------------------------------------------
+
+:::::::: toolkit-grid
+
+::: toolkit-card
+![](/icons/r.jpg){.toolkit-icon}
+
+<h3>R Programming</h3>
+
+<p>R is built for statistical analysis, data visualization, reproducible documents, and geospatial workflows. It excels at modeling, spatial analysis, and generating publication-ready figures. It also supports knitting Word documents, PDFs, and interactive HTML outputs, making it a flexible tool for scientific communication.</p>
+
+<p><strong>How I use it:</strong> Habitat suitability modeling (HSI rasters), tidal and discharge analysis, Integrated Fitness (IF) mapping, SPM trend analysis, spatial autocorrelation (Moran's I and LISA), and producing RMarkdown/Quarto reports for transparent, reproducible science.</p>
+
+<a href="https://rafalab.dfci.harvard.edu/dsbook/getting-started.html" class="toolkit-link">Explore R Tips →</a>
+:::
+
+::: toolkit-card
+<img src="/images/icons/python_icon.png" class="toolkit-icon"/>
+
+<h3>Python</h3>
+
+<p>Python supports large-scale scientific computing, automation, hydrodynamic modeling, and environmental data processing. It is strongly aligned with reproducible open science, especially through notebooks and living documents. Python also generates fast, high-resolution outputs for groundwater simulations and particle-tracking analyses.</p>
+
+<p><strong>How I use it:</strong> Groundwater–surface water modeling (MODFLOW/MODPATH using FloPy), automating analysis pipelines, processing rasters, forecasting climate and fisheries trends, and developing the GoFish modeling toolkit.</p>
+
+<a href="https://earth-env-data-science.github.io/intro.html" class="toolkit-link">Explore Python Tips →</a>
+:::
+
+::: toolkit-card
+![](/icons/NetLogo-Logo.svg.png){.toolkit-icon}
+
+<h3>NetLogo</h3>
+
+<p>NetLogo is a specialty platform for agent-based modeling, enabling spatially explicit behavioral simulations and rule-based ecological interactions. It supports model co-development and is ideal for answering complex ecological questions that combine hydrodynamics, behavior, and environmental gradients.</p>
+
+<p><strong>How I use it:</strong> Core engine for river herring, striped bass, and sturgeon behavioral models, including selective tidal stream transport (STST), staging, predator–prey dynamics, spawning behavior, contaminant exposure pathways, and social learning simulations used in workshops and manuscripts.</p>
+
+<a href="https://www.intro-to-abm.com/">Explore NetLogo Tips →</a>
+<a href="https://ccl.northwestern.edu/netlogo/models/">Explore Open-Source Library →</a>
+:::
+
+::: toolkit-card
+<img src="/images/icons/matlab_icon.png" class="toolkit-icon"/>
+
+<h3>MATLAB</h3>
+
+<p>MATLAB excels at numerical analysis, matrix operations, and advanced signal processing, making it essential for hydrodynamics and environmental physics. It is widely used in coastal engineering for processing field data and preparing inputs for coupled hydrodynamic models.</p>
+
+<p><strong>How I use it:</strong> Wavelet decomposition to isolate tidal frequencies, SPM flux analysis, sediment transport metrics, ADCP calibration, and discharge–tidal harmonics assessment — all core components of my Penobscot hydrodynamics research.</p>
+
+<a href="https://www.mathworks.com/support/learn-with-matlab-tutorials.html" class="toolkit-link">Explore MATLAB Tips →</a>
+:::
+
+::: toolkit-card
+<img src="/images/icons/github_icon.png" class="toolkit-icon"/>
+
+<h3>Version Control</h3>
+
+<p>Git and GitHub enable transparent, collaborative, and reproducible science through version tracking, branching, merging, and workflow documentation. They support open, community-centered model development and improve scientific transparency.</p>
+
+<p><strong>How I use it:</strong> Managing all major modeling repositories including GoFish, hydrodynamic scripts, ABM modules, Quarto websites, workshop materials, and forecasting models. Version control also supports co-development with Tribal partners and federal collaborators.</p>
+
+<a href="https://usace-wrises.github.io/GitHub_Workflow_Tutorial_Webpage/" class="toolkit-link">Explore GitHub Utility →</a>
+:::
+
+::: toolkit-card
+<img src="/images/icons/html_icon.png" class="toolkit-icon"/>
+
+<h3>HTML / CSS / JS</h3>
+
+<p>HTML structures content, CSS controls styling, and JavaScript adds interactivity — together they enable interactive, accessible scientific communication tools. These languages are essential for modern model communication, user interfaces, and knowledge-transfer applications.</p>
+
+<p><strong>How I use it:</strong> Building Quarto websites, interactive modeling pages, animated hero banners, pixel-art interfaces, workshop instruction materials, and public-facing documentation for GoFish and Penobscot modeling projects.</p>
+
+<a href="https://developer.mozilla.org/en-US/docs/Learn" class="toolkit-link">Explore HTML Resources →</a>
+:::
+
+::::::::
+
+------------------------------------------------------------------------

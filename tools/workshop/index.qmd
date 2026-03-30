@@ -1,0 +1,209 @@
+---
+title: "Co-Development Materials"
+format: html
+editor: visual
+---
+
+# Co-Developing & Co-Producing Ecological Models
+
+The following summarizes courses I have developed or taught for universities, professional development courses, conference mini-courses, and self-guided learning. Like my analytical projects, I take a highly collaborative approach to instruction, and most classes are co-developed with complementary expertise. At present, only brief course descriptions are provided, but syllabi and course materials will be uploaded in the future.
+
+------------------------------------------------------------------------
+
+## Design Justice Principles
+
+```{=html}
+<div style="text-align:center;">
+  <img src="/images/VMQ/Conceptual_Figures/design_justice.jpg"
+       alt="Design Justice Principles"
+       style="width:800px; border-radius:12px;
+              box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+</div>
+```
+
+The Design Justice Network Principles are a framework for rethinking how design processes impact communities, redistribute power, and imagine futures rooted in equity and liberation. These principles center the voices, knowledge systems, and lived experiences of communities who are most impacted by design decisions.
+
+Grounded in intersectional analysis, Design Justice asks us to reconsider who is involved in design, who benefits from it, and who may be harmed or excluded. It offers a pathway to create processes and tools that are community-led, culturally grounded, and oriented toward collective flourishing.
+
+[Find the Principles Here](https://designjustice.org/read-the-principles)
+
+The principles emphasize:
+
+-   **Centering the experiences and leadership of those most impacted** by design outcomes
+
+-   **Building community capacity**, not just extracting knowledge
+
+-   **Designing with, not for**, and valuing different forms of expertise
+
+-   **Challenging the matrix of domination**, including racism, colonialism, heteropatriarchy, ableism, and economic exploitation
+
+-   **Ensuring meaningful participation** across all stages of design
+
+-   **Promoting sustainable, community-controlled outcomes**
+
+-   **Supporting collective liberation** through design that honors many worlds, many histories, and many futures
+
+These principles are used around the world in design, engineering, education, public health, environmental science, and community technology. Integrating this framework into our work helps shift power, create accountable collaboration, and ensure that design processes contribute to justice rather than reinforcing inequity.
+
+------------------------------------------------------------------------
+
+## Mutually Beneficial and Reciprocal Relationships
+
+Co-development requires relationships grounded in reciprocity rather than one-sided knowledge extraction, or "parachute" science. In ecological modeling, this means building collaborations where partners benefit in tangible ways, whether through shared decision-making, capacity building, community-relevant data products, or long-term stewardship of outcomes.
+
+This approach reframes ecological modeling as a shared learning process rather than a technical service. In practice, I emphasize:
+
+-   **Early and ongoing engagement** to identify community priorities
+
+-   **Shared authority** in defining modeling goals, outputs, and acceptable uses
+
+-   **Equitable distribution of benefits**, including training, data access, and authorship where appropriate
+
+-   **Technology Transfer**
+
+-   **Continual reflection** on whether the collaboration remains reciprocal
+
+This relationship ethic aligns with principles of community science, Tribal sovereignty, and responsible environmental decision-making.
+
+------------------------------------------------------------------------
+
+## Relationship Building & Communication
+
+Trust is foundational to collaborative ecological modeling. Technical work alone cannot sustain a partnership; communication and relationship building must be ongoing and intentional. Relationships are best built from other connections or "bridges" to connect you to others to initiate a relationship.
+
+My instruction highlights:
+
+-   **Practices for building trust across disciplines and cultures**
+
+-   **Approaches for communicating uncertainty, risk, and trade-offs**
+
+-   **Collaborative decision-making tools**, such as conceptual modeling, shared mapping, and iterative feedback loops
+
+-   **Facilitation strategies** that create space for many voices and many forms of expertise
+
+-   **Approaches to conflict navigation**, especially in community-embedded environmental work
+
+Effective modeling depends on shared understanding, shared language, and shared ownership of what the model is intended to accomplish.
+
+------------------------------------------------------------------------
+
+## And, But, Therefore (ABT)
+
+The ABT narrative framework provides a simple and powerful structure for scientific communication. It distills a story into three essential beats: And, But, and Therefore. This format helps translate complex ecological or modeling concepts into clear and actionable insights that people can easily follow.
+
+ABT supports collaborative work by creating a shared narrative foundation. Rather than listing data in long chains, ABT prompts us to articulate context, tension, and a meaningful path forward. These three elements match the way people naturally understand environmental problems.
+
+### ABT as a Tool for Co-Development
+
+I use ABT to reframe and re-scope ecological modeling projects through the perspectives of local community members, including Indigenous community members whose stewardship, lived experience, and cultural knowledge shape the ecosystem. Many modeling projects begin with technical objectives that do not fully reflect community priorities. ABT helps reposition the work so that community-defined concerns lead the narrative.
+
+Here is an example from my previous work on the Penobscot River Estuary:
+
+**And:**\
+People who live along the Penobscot River rely on the estuary for cultural practices, food traditions, and community identity, and they continue to protect and care for the river through long-standing stewardship. Community members, including the Wabanaki Nations and the Penobscot Nation, have deep knowledge of fish behavior, seasonal patterns, and habitat conditions.
+
+**But:**\
+Fish in the estuary continue to carry mercury at levels that limit access, safety, and cultural use. Community members see that current restoration efforts often focus on where the most contaminated sediment sits on the riverbed, but these efforts do not always address where fish actually encounter contamination as they migrate, feed, and rest. This mismatch creates a gap between technical remediation strategies and community needs for safe and accessible fish.
+
+**Therefore:**\
+Reframing the problem around fish exposure, community access, and cultural well-being supports solutions that focus on the places and processes where fish interact with contamination. This shift helps guide decision making toward strategies that reduce exposure, improve access to traditional foods, and support long-term community and Tribal priorities for the river.
+
+This form of storytelling helps align ecological models with the experiences and values of the people who live within the ecosystem, rather than with technical concerns alone.
+
+### Why use ABT?
+
+I recommend modelers use ABT to:
+
+-   **Articulate model purpose** and clarify decision contexts
+
+-   **Communicate tradeoffs and limitations** in ways that resonate with local communities
+
+-   **Build concise narratives** for presentations, reports, and community meetings
+
+-   **Connect technical outputs** to policy, cultural priorities, and community-defined goals
+
+-   **Re-scope project objectives** so they reflect community perspectives, not only technical or regulatory ones
+
+### Learn More
+
+[Read More About the ABT Framework Here](https://www.associationofsciencecommunicators.org/2025/the-science-of-storytelling/)
+
+[Download Worksheets Here](Group_Activity_1_ABT.pdf)
+
+ABT strengthens communication and co-development because it creates stories that are coherent, compelling, and grounded in the lived experiences of local communities and Indigenous knowledge holders.
+
+------------------------------------------------------------------------
+
+## Data Visualization
+
+```{=html}
+<div style="text-align:center;">
+  <img src="/images/VMQ/Conceptual_Figures/data_visual.png"
+       alt="Design Justice Principles"
+       style="width:800px; border-radius:12px;
+              box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+</div>
+```
+
+Data visualization is a central component of ecological modeling because it helps partners interpret patterns, explore scenarios, and make informed decisions. My instruction focuses on creating transparent and accessible visual products that support communication and decision making. Visualizations also carry inherent and sometimes unintended connotations that influence how people interpret information. Choices in color, scale, layout, and symbol design can shape meaning, emotion, and accessibility, which can either clarify data or introduce misunderstanding. A careful and intentional approach ensures that visualizations remain truthful, respectful, and supportive of community decision processes.
+
+Core topics include:
+
+-   **Designing intuitive visualizations** for interdisciplinary audiences
+
+-   **Using color, scale, and layout** to highlight ecological patterns
+
+-   **Animating spatial and temporal processes**, such as migration, flow dynamics, and contaminant movement
+
+-   **Building reproducible workflows** in R and Python
+
+-   **Developing visual tools** for workshops, dashboards, and interactive model exploration
+
+### Tips for Data Visualization
+
+[Best Practices](https://gge-ucd.github.io/R-DAVIS/lesson_11_data_viz_pt2.html)
+
+[Charts & Graphs](https://accessibility.huit.harvard.edu/data-viz-charts-graphs)
+
+[What is the significance of color in data visualization?](https://www.datasciencecentral.com/what-is-the-significance-of-color-in-data-visualization/)
+
+Visualization is treated not just as aesthetics, but as a co-development tool that shapes understanding and guides collective insight.
+
+------------------------------------------------------------------------
+
+## Data Sovereignty (Intellectual Property)
+
+```{=html}
+<div style="text-align:center;">
+  <img src="/images/VMQ/Conceptual_Figures/Indigenous Data Goverance Principles 2020.jpg"
+       alt="Design Justice Principles"
+       style="width:800px; border-radius:12px;
+              box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+</div>
+```
+
+Collaborative modeling must respect data sovereignty, especially when working with Tribal Nations, local communities, or groups with culturally sensitive knowledge. This section introduces ethical and legal considerations surrounding data ownership, access, governance, and use.
+
+Instruction covers:
+
+-   **Principles of Indigenous Data Sovereignty** and community-controlled research
+
+-   **OCAP, CARE, and FAIR frameworks** and how they interact
+
+-   **Developing data-sharing agreements** that reflect community priorities
+
+-   **Ensuring culturally appropriate use** of knowledge, stories, and sensitive information
+
+-   **Protecting intellectual property** arising from co-produced models and datasets
+
+### Learn More
+
+[Indigenous Data Sovereignty & Governance](https://nni.arizona.edu/our-work/research-policy-analysis/indigenous-data-sovereignty-governance)
+
+[Data Sovereignty](https://nativeland.info/about/data-sovereignty/)
+
+[Indigenous Data Goverance Principles](Data_sovereignty_principles.pdf)
+
+Respecting data sovereignty is not only an ethical commitment, but essential to building trust, strengthening collaborations, and ensuring that models are used in ways that align with community values.
+
+------------------------------------------------------------------------

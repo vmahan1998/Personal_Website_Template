@@ -1,0 +1,7 @@
+docs/
+.quarto/
+.Rproj.user/
+.DS_Store
+Thumbs.db
+
+/.quarto/

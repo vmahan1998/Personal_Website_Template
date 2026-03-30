@@ -1,0 +1,108 @@
+---
+title: "Modeling Projects"
+---
+
+<style>
+body { background: linear-gradient(180deg,#08131d 0%,#0d1f2b 100%) !important; }
+.project-card {
+  padding: 1.3rem 1.5rem;
+  border-radius: 18px;
+  background: rgba(15,31,45,0.55);
+  border: 1px solid rgba(126,204,230,0.16);
+  margin-bottom: 1.1rem;
+  transition: 0.2s ease;
+}
+.project-card:hover { border-color: rgba(126,204,230,0.32); transform: translateY(-3px); box-shadow: 0 14px 36px rgba(0,0,0,0.22); }
+.project-card h3 { color: #ffffff; margin-top: 0; margin-bottom: 0.4rem; }
+.project-card p { color: rgba(214,236,246,0.90); font-size: 0.98rem; line-height: 1.65; margin-bottom: 0.5rem; }
+.project-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(126,204,230,0.10);
+  border: 1px solid rgba(126,204,230,0.22);
+  color: #7ecce6;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 3px 3px 0 0;
+}
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 13px;
+  border-radius: 8px;
+  background: rgba(126,204,230,0.12);
+  border: 1px solid rgba(126,204,230,0.25);
+  color: #7ecce6 !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  margin-right: 6px;
+  margin-top: 0.6rem;
+  transition: 0.2s ease;
+}
+.project-link:hover { background: rgba(126,204,230,0.22); }
+</style>
+
+## View Models
+
+<div class="project-card">
+  <h3>Penobscot Mercury Exposure Model</h3>
+  <p>A coupled hydrodynamic and agent-based modeling framework designed to evaluate how environmental dynamics and fish behavior structure contaminant exposure risk for anadromous fish in the Penobscot River estuary. The model integrates Delft3D FM hydrodynamic outputs with NetLogo-based behavioral agents to produce time-varying, spatially explicit exposure estimates.</p>
+  <span class="project-tag">Agent-Based Modeling</span>
+  <span class="project-tag">Hydrodynamics</span>
+  <span class="project-tag">Contaminant Transport</span>
+  <span class="project-tag">NetLogo</span>
+</div>
+
+<div class="project-card">
+  <h3>River Herring Habitat Modeling</h3>
+  <p>Life-stage-specific habitat suitability modeling for alewife and blueback herring across changing estuarine conditions. The framework links environmental gradients — temperature, salinity, depth, flow — with species-specific life-stage requirements to produce dynamic habitat maps across the tidal estuary.</p>
+  <span class="project-tag">Habitat Suitability</span>
+  <span class="project-tag">R</span>
+  <span class="project-tag">GIS</span>
+  <a class="project-link" href="https://github.com/vmahan1998/RiverHerringHabitatModel_TechReport">GitHub</a>
+  <a class="project-link" href="https://vkzfr3-vanessa-mahan.shinyapps.io/rh_dashboard">Dashboard</a>
+</div>
+
+<div class="project-card">
+  <h3>Groundwater and Hyporheic Zone Modeling</h3>
+  <p>Automation of groundwater modeling workflows using FloPy and Python to evaluate hyporheic zone ecological benefits for stream restoration projects. The HyporheicFloPy tool reduced model runtimes from days to minutes while producing reproducible, documented workflows for federal project use.</p>
+  <span class="project-tag">Python</span>
+  <span class="project-tag">FloPy</span>
+  <span class="project-tag">Groundwater</span>
+  <span class="project-tag">USACE</span>
+  <a class="project-link" href="https://usace-wrises.github.io/HyporheicFloPy">Documentation</a>
+</div>
+
+<div class="about-divider"></div>
+
+## Tools and Applications
+
+<div class="project-card">
+  <h3>Mercury Risk Explorer</h3>
+  <p>An interactive Shiny application that visualizes how hydrodynamics, habitat, and fish behavior structure mercury exposure risk in estuaries. Designed for both scientific communication and stakeholder engagement, the app lets users explore exposure probability across tidal phases, seasons, and behavioral scenarios.</p>
+  <span class="project-tag">R Shiny</span>
+  <span class="project-tag">Decision Support</span>
+  <span class="project-tag">Interactive</span>
+  <a class="project-link" href="https://vkzfr3-vanessa-mahan.shinyapps.io/Mercury_Risk_Explorer">Launch App</a>
+</div>
+
+<div class="project-card">
+  <h3>GoFish Modeling Toolkit</h3>
+  <p>A behavioral modeling toolkit for migratory fish with functions covering movement, energetics, exposure, trophic interactions, and ecological risk. Built to be modular and extensible for researchers working on anadromous species across different estuarine contexts.</p>
+  <span class="project-tag">R Package</span>
+  <span class="project-tag">Behavioral Modeling</span>
+  <span class="project-tag">Open Source</span>
+  <a class="project-link" href="https://vmahan1998.github.io/GoFish">Documentation</a>
+</div>
+
+<div class="project-card">
+  <h3>Community Facing Workshops and Tools</h3>
+  <p>Alongside research products, I develop educational materials, workshop curricula, and public-facing dashboards for Tribal partners, resource managers, and researchers. This includes GitHub workflow tutorials for federal scientists and participatory modeling workshops designed for mixed technical and non-technical audiences.</p>
+  <span class="project-tag">Outreach</span>
+  <span class="project-tag">Co-Development</span>
+  <span class="project-tag">Training</span>
+  <a class="project-link" href="https://usace-wrises.github.io/GitHub_Workflow_Tutorial_Webpage/">GitHub Tutorials</a>
+</div>

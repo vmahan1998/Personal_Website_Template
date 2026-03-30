@@ -14,9 +14,9 @@ The following summarizes courses I have developed or taught for universities, pr
 
 ```{=html}
 <div style="text-align:center;">
-  <img src="/images/VMQ/Conceptual_Figures/design_justice.jpg"
+  <img src="/images/design_justice.jpg"
        alt="Design Justice Principles"
-       style="width:800px; border-radius:12px;
+       style="width:600px; border-radius:12px;
               box-shadow:0 4px 12px rgba(0,0,0,0.15);">
 </div>
 ```
@@ -51,7 +51,7 @@ These principles are used around the world in design, engineering, education, pu
 
 Co-development requires relationships grounded in reciprocity rather than one-sided knowledge extraction, or "parachute" science. In ecological modeling, this means building collaborations where partners benefit in tangible ways, whether through shared decision-making, capacity building, community-relevant data products, or long-term stewardship of outcomes.
 
-This approach reframes ecological modeling as a shared learning process rather than a technical service. In practice, I emphasize:
+This approach re-frames ecological modeling as a shared learning process rather than a technical service. In practice, I emphasize:
 
 -   **Early and ongoing engagement** to identify community priorities
 
@@ -95,7 +95,7 @@ ABT supports collaborative work by creating a shared narrative foundation. Rathe
 
 ### ABT as a Tool for Co-Development
 
-I use ABT to reframe and re-scope ecological modeling projects through the perspectives of local community members, including Indigenous community members whose stewardship, lived experience, and cultural knowledge shape the ecosystem. Many modeling projects begin with technical objectives that do not fully reflect community priorities. ABT helps reposition the work so that community-defined concerns lead the narrative.
+I use ABT to re-frame and re-scope ecological modeling projects through the perspectives of local community members, including Indigenous community members whose stewardship, lived experience, and cultural knowledge shape the ecosystem. Many modeling projects begin with technical objectives that do not fully reflect community priorities. ABT helps re-position the work so that community-defined concerns lead the narrative.
 
 Here is an example from my previous work on the Penobscot River Estuary:
 
@@ -106,7 +106,7 @@ People who live along the Penobscot River rely on the estuary for cultural pract
 Fish in the estuary continue to carry mercury at levels that limit access, safety, and cultural use. Community members see that current restoration efforts often focus on where the most contaminated sediment sits on the riverbed, but these efforts do not always address where fish actually encounter contamination as they migrate, feed, and rest. This mismatch creates a gap between technical remediation strategies and community needs for safe and accessible fish.
 
 **Therefore:**\
-Reframing the problem around fish exposure, community access, and cultural well-being supports solutions that focus on the places and processes where fish interact with contamination. This shift helps guide decision making toward strategies that reduce exposure, improve access to traditional foods, and support long-term community and Tribal priorities for the river.
+Re-framing the problem around fish exposure, community access, and cultural well-being supports solutions that focus on the places and processes where fish interact with contamination. This shift helps guide decision making toward strategies that reduce exposure, improve access to traditional foods, and support long-term community and Tribal priorities for the river.
 
 This form of storytelling helps align ecological models with the experiences and values of the people who live within the ecosystem, rather than with technical concerns alone.
 
@@ -116,7 +116,7 @@ I recommend modelers use ABT to:
 
 -   **Articulate model purpose** and clarify decision contexts
 
--   **Communicate tradeoffs and limitations** in ways that resonate with local communities
+-   **Communicate trade-offs and limitations** in ways that resonate with local communities
 
 -   **Build concise narratives** for presentations, reports, and community meetings
 
@@ -138,9 +138,9 @@ ABT strengthens communication and co-development because it creates stories that
 
 ```{=html}
 <div style="text-align:center;">
-  <img src="/images/VMQ/Conceptual_Figures/data_visual.png"
+  <img src="/images/data_visual.png"
        alt="Design Justice Principles"
-       style="width:800px; border-radius:12px;
+       style="width:600px; border-radius:12px;
               box-shadow:0 4px 12px rgba(0,0,0,0.15);">
 </div>
 ```
@@ -175,9 +175,9 @@ Visualization is treated not just as aesthetics, but as a co-development tool th
 
 ```{=html}
 <div style="text-align:center;">
-  <img src="/images/VMQ/Conceptual_Figures/Indigenous Data Goverance Principles 2020.jpg"
+  <img src="/images/Indigenous Data Goverance Principles 2020.jpg"
        alt="Design Justice Principles"
-       style="width:800px; border-radius:12px;
+       style="width:600px; border-radius:12px;
               box-shadow:0 4px 12px rgba(0,0,0,0.15);">
 </div>
 ```

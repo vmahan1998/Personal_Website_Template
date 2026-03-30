@@ -1,5 +1,5 @@
 ---
-title: "Modeling Toolkit"
+title: " "
 format: html
 page-layout: full
 editor: visual
@@ -44,8 +44,8 @@ Core Coding Skills
 </style>
 ```
 
-Coding is the backbone of ecological modeling.  
-It enables transparent methods, reproducible workflows, automated analyses, and models that reflect real ecological processes. Most importantly, diverse coding skills allow knowledge to move easily across disciplines, increasing model utility by making tools accessible to different communities and management audiences. Different fields use their own programming conventions and software ecosystems, so knowing multiple languages improves communication, interdisciplinary collaboration, and technology transfer. Coding is also essential for designing interactive, accessible communication and decision-support applications.  
+Coding is the backbone of ecological modeling.\
+It enables transparent methods, reproducible workflows, automated analyses, and models that reflect real ecological processes. Most importantly, diverse coding skills allow knowledge to move easily across disciplines, increasing model utility by making tools accessible to different communities and management audiences. Different fields use their own programming conventions and software ecosystems, so knowing multiple languages improves communication, interdisciplinary collaboration, and technology transfer. Coding is also essential for designing interactive, accessible communication and decision-support applications.
 
 Whether simulating fish behavior, building hydrodynamic models, analyzing sediment transport, or creating decision-support tools, coding is what makes ecological research scalable, clear, and open.
 
@@ -53,10 +53,10 @@ Below are the core tools I use across hydrodynamics, habitat modeling, sediment 
 
 ------------------------------------------------------------------------
 
-:::::::: toolkit-grid
+::::::::: toolkit-grid
 
 ::: toolkit-card
-![](/icons/r.jpg){.toolkit-icon}
+<i class="fa-brands fa-r-project toolkit-icon"></i>
 
 <h3>R Programming</h3>
 
@@ -68,7 +68,7 @@ Below are the core tools I use across hydrodynamics, habitat modeling, sediment 
 :::
 
 ::: toolkit-card
-<img src="/images/icons/python_icon.png" class="toolkit-icon"/>
+<i class="fa-brands fa-python toolkit-icon"></i>
 
 <h3>Python</h3>
 
@@ -80,7 +80,7 @@ Below are the core tools I use across hydrodynamics, habitat modeling, sediment 
 :::
 
 ::: toolkit-card
-![](/icons/NetLogo-Logo.svg.png){.toolkit-icon}
+<i class="fa-solid fa-diagram-project toolkit-icon"></i>
 
 <h3>NetLogo</h3>
 
@@ -93,7 +93,7 @@ Below are the core tools I use across hydrodynamics, habitat modeling, sediment 
 :::
 
 ::: toolkit-card
-<img src="/images/icons/matlab_icon.png" class="toolkit-icon"/>
+<i class="fa-solid fa-square-root-variable toolkit-icon"></i>
 
 <h3>MATLAB</h3>
 
@@ -105,7 +105,7 @@ Below are the core tools I use across hydrodynamics, habitat modeling, sediment 
 :::
 
 ::: toolkit-card
-<img src="/images/icons/github_icon.png" class="toolkit-icon"/>
+<i class="fa-brands fa-github toolkit-icon"></i>
 
 <h3>Version Control</h3>
 
@@ -117,7 +117,7 @@ Below are the core tools I use across hydrodynamics, habitat modeling, sediment 
 :::
 
 ::: toolkit-card
-<img src="/images/icons/html_icon.png" class="toolkit-icon"/>
+<i class="fa-solid fa-code toolkit-icon"></i>
 
 <h3>HTML / CSS / JS</h3>
 
@@ -128,6 +128,6 @@ Below are the core tools I use across hydrodynamics, habitat modeling, sediment 
 <a href="https://developer.mozilla.org/en-US/docs/Learn" class="toolkit-link">Explore HTML Resources →</a>
 :::
 
-::::::::
+:::::::::
 
 ------------------------------------------------------------------------

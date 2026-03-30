@@ -363,7 +363,7 @@ Life-stage-specific habitat suitability frameworks linking environmental gradien
 ::: {.column width="25%"}
 
 ::: {.research-card}
-![](images/Community_Workshop.jpg){.research-img fig-alt="Co-Development"}
+![](images/Community_Workshop.JPG){.research-img fig-alt="Co-Development"}
 
 ### Co-Development
 

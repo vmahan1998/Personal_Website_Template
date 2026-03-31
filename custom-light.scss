@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+
+$body-bg: #ffffff;
+$body-color: #1a1a1a;
+$primary: #2c7be5;
+$headings-color: #000000;
+
+/* Navbar */
+$navbar-bg: #f8f9fa;
+$navbar-fg: #000000;
+
+/* Links */
+$link-color: #2c7be5;
+$link-hover-color: #1a5edb;
+
+/*-- scss:rules --*/
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+h1, h2, h3 {
+  color: #000000;
+}
+
+.callout {
+  background: #f8f9fa;
+  border-left: 4px solid #2c7be5;
+}

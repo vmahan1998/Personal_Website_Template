@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - files/*
 
 from: markdown+raw_html
 
@@ -27,9 +29,11 @@ website:
             href: news/2026.qmd
     right:
       - icon: github
-        href: https://github.com/yourusername
+        href: https://github.com/vmahan1998
       - icon: envelope
-        href: mailto:your.email@maine.edu
+        href: mailto:vanessa.mahan@maine.edu
+      - icon: linkedin
+        href: https://www.linkedin.com/in/vanessa-mahan/
   page-footer:
     left: "© 2026 Vanessa Mahan"
     right: "Built with [Quarto](https://quarto.org)"

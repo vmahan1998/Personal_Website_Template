@@ -54,7 +54,7 @@ body { background: linear-gradient(180deg,#08131d 0%,#0d1f2b 100%) !important; }
 @media (max-width: 600px) { .skill-grid { grid-template-columns: 1fr; } }
 </style>
 
-[Download PDF](files/Quintana_Resume.pdf){.btn .btn-primary}
+[Download PDF](files/Quintana__Resume.pdf){.btn .btn-primary}
 
 ## Vanessa M. Quintana
 **Applied Ecological Modeler · Coastal Systems Scientist · Geospatial Analyst**
@@ -62,7 +62,7 @@ body { background: linear-gradient(180deg,#08131d 0%,#0d1f2b 100%) !important; }
 <div class="cv-contact">
   <a href="mailto:Mahan.Vanessa98@gmail.com">📧 Email</a>
   <a href="https://github.com/vmahan1998">GitHub</a>
-  <a href="linkedin.com/m/in/vanessa-quintana-a775aa170/">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/vanessa-quintana-a775aa170" target="_blank">LinkedIn</a>
   <a href="https://orcid.org/0000-0002-4179-3575">ORCID</a>
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "Coding 101 for Ecological Modeling"
 format: html
 page-layout: full
 editor: visual

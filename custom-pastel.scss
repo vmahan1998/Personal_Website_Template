@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+$body-bg: #fff6fb;
+$body-color: #3a2a3a;
+$primary: #d98cff;
+$headings-color: #5c3a5c;
+
+/* Navbar */
+$navbar-bg: #fbeaff;
+$navbar-fg: #5c3a5c;
+
+/* Links */
+$link-color: #c061ff;
+$link-hover-color: #a84be0;
+
+/*-- scss:rules --*/
+
+body {
+  background: linear-gradient(180deg, #fff6fb 0%, #fbeaff 100%);
+}
+
+h1, h2 {
+  color: #5c3a5c;
+}
+
+h3 {
+  color: #c061ff;
+}
+
+.callout {
+  background: rgba(216, 140, 255, 0.1);
+  border-left: 4px solid #d98cff;
+}
+
+.btn {
+  background-color: #d98cff;
+  border: none;
+  color: white;
+}

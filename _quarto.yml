@@ -7,7 +7,7 @@ project:
 from: markdown+raw_html
 
 website:
-  title: "Nalika "
+  title: "Vanessa Quintana"
   navbar:
     background: primary
     foreground: light
@@ -40,7 +40,7 @@ website:
 
 format:
   html:
-    theme: [flatly, custom-pastel.scss]
+    theme: [flatly, custom.scss]
     css: styles.css
     toc: true
     toc-depth: 2
